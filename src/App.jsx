@@ -8,6 +8,12 @@ function App() {
       <div className='form-container'>
         <form action="">
 
+          <div className="title">
+            <img src="" alt="" />
+            <h2>Flow Insights</h2>
+            <p>Imagine uncovering the truth about the worlds behaviour with minimal error and maximum privacy</p>
+          </div>
+
           
           <div className='name-input'>
           <input type="text" placeholder='First Name'  required/>
@@ -21,9 +27,9 @@ function App() {
           </div>
 
           <div className="name-input">
-            <input type="text" placeholder='Address' required/>
-            <input type="text" placeholder='Address' required/>
-            <input type="text" placeholder='Address' required/>
+            <input type="number" id="day" name="day" min="1" max="31" placeholder="Day"/>
+            <input type="month" placeholder='Address' required/>
+            <input type="month" id="month" name="month"/>
           </div>
         </form>
         </div>

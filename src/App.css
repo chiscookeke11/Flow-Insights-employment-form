@@ -6,16 +6,31 @@
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background: #fff;
+  background: #e8e8e8;
+  font-family: "Roboto", sans-serif;
 }
 form{
-  width: 80%;
-  background-color: #e8e8e8;
+  width: 60%;
+  background-color: #fff;
   min-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 20px 10px 40px;
+}
+.title{
+  width: 100%;
+  padding: 20px 40px 50px 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.title h2{
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.title p{
+  font-size: 1.26rem;
+  font-weight: 400;
 }
 .name-input {
   width: 100%;
@@ -27,7 +42,7 @@ form{
 .name-input input{
   margin: 0px 5px 0px;
   outline: none;
-  border: none;
+  border: 0.5px solid #e8e8e8;
   padding: 10px 8px;
   width: 100%;
   font-size: 0.9rem;
