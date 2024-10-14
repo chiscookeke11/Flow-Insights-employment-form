@@ -38,8 +38,9 @@ form{
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  background-color: red;
 }
-.name-input input{
+.name-input input, .name-input select{
   margin: 0px 5px 0px;
   outline: none;
   border: 0.5px solid #e8e8e8;
