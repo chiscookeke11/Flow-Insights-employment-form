@@ -9,7 +9,7 @@ function App() {
         <form action="">
 
           <div className="title">
-            <img src="" alt="Logo" />
+            <img src="https://github.com/chiscookeke11/Test-pagea/blob/main/flowinsights-logo.jpg" alt="Logo" />
             <h2>Flow Insights</h2>
             <p>Imagine uncovering the truth about the worlds behaviour with minimal error and maximum privacy</p>
           </div>
