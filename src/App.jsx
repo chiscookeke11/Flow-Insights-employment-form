@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { countries } from 'countries-list'; // Import the countries-list library
 import './App.css';
+import Days from './days';
 
 function App() {
   const countryList = Object.values(countries); // Get all countries from the library
@@ -23,7 +24,7 @@ function App() {
           </div>
 
           <div className="name-input">
-            <input type="number" id="day" name="day" min="1" max="31" placeholder="Day" />
+            <Days/>
             <select name="month" id="">
               <option value="">Select Month</option>
               <option value="1">January</option>
@@ -65,6 +66,30 @@ function App() {
             <input type="telephone" placeholder='(000) 000-0000' />
             <input type="url" placeholder='LinkedIn' />
           </div>
+
+          <div className='name-input'>
+            <input type="date" placeholder='Start date' required />
+            <select name="position" id="position">
+              <option value="">Position applied</option>
+              <option value="">Position applied</option>
+              <option value="">Position applied</option>
+              <option value="">Position applied</option>
+            </select>
+          </div>
+          <div className='name-input'>
+            <textarea name="skills" id="skills" cols="100" rows="10" placeholder='Skills'></textarea>
+          </div>
+
+          <div className='name-input'>
+            <label htmlFor="files"><ul><li>Upload resume</li></ul></label>
+           <input type="file" />
+          </div>
+
+          <div className='name-input'>
+            <textarea name="cover-letter" id="cover-letter" cols="100" rows="10" placeholder='Cover Letter'></textarea>
+          </div>
+
+          <input type="button" placeholder='Apply'  />
 
         </form>
       </div>
