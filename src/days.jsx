@@ -2,8 +2,8 @@ import React from 'react'
 
 const Days = () => {
   return (
-    <div>
-        <select name="days" id="days">
+    <div className="days-input">
+        <select name="days" id="days" >
             <option value="">Select Day</option>
             <option value="">1</option>
             <option value="">2</option>

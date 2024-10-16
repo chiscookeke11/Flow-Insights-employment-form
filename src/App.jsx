@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { countries } from 'countries-list'; // Import the countries-list library
+import { countries } from 'countries-list'; 
 import './App.css';
 import Days from './days';
+import YearSelect from './YearSelect'
 
 function App() {
-  const countryList = Object.values(countries); // Get all countries from the library
+  const countryList = Object.values(countries);
 
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
         <form action="">
 
           <div className="title">
-            <img src="https://github.com/chiscookeke11/Test-pagea/blob/main/flowinsights-logo.jpg?raw=true" alt="Logo" />
+            <img src="https://github.com/chiscookeke11/Test-pagea/blob/main/flowinsights-logo.jpg?raw=true" alt="Logo" className="logo" />
             <h2>Flow Insights</h2>
             <p>Imagine uncovering the truth about the world's behavior with minimal error and maximum privacy</p>
           </div>
@@ -40,7 +41,8 @@ function App() {
               <option value="11">November</option>
               <option value="12">December</option>
             </select>
-            <input type="number" id="year" name="year" min="1900" max="2024" placeholder='Year' />
+            <YearSelect/>
+           
           </div>
 
           <div className='name-input address'>
@@ -71,8 +73,8 @@ function App() {
             <input type="date" placeholder='Start date' required />
             <select name="position" id="position">
               <option value="">Position applied</option>
-              <option value="">Position applied</option>
-              <option value="">Position applied</option>
+              <option value="">Sales Rep</option>
+              <option value="">Market analyst</option>
               <option value="">Position applied</option>
             </select>
           </div>
@@ -81,15 +83,16 @@ function App() {
           </div>
 
           <div className='name-input'>
-            <label htmlFor="files"><ul><li>Upload resume</li></ul></label>
-           <input type="file" />
+            <label for="files">Upload resume</label>
+           <input type="file" name="files" />
           </div>
 
           <div className='name-input'>
             <textarea name="cover-letter" id="cover-letter" cols="100" rows="10" placeholder='Cover Letter'></textarea>
           </div>
 
-          <input type="button" placeholder='Apply'  />
+          
+          <button className="apply-btn" >Apply</button>
 
         </form>
       </div>

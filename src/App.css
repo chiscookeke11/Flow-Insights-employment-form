@@ -1,3 +1,7 @@
+html{
+  font-family: "Roboto", sans-serif;
+}
+
 .form-container{
   display: flex;
   justify-content: center;
@@ -17,6 +21,10 @@ form{
   flex-direction: column;
   gap: 30px;
   padding: 20px 10px 40px;
+}
+.logo{
+  width:150px;
+  margin: 0 auto;
 }
 .title{
   width: 100%;
@@ -39,7 +47,7 @@ form{
   align-items: center;
   padding: 10px 0;
 }
-.name-input input, .name-input select, .name-input textarea{
+.name-input input, .name-input select, .name-input textarea, .days-input{
   margin: 0px 5px 0px;
   outline: none;
   border: 0.5px solid #e8e8e8;
@@ -47,12 +55,37 @@ form{
   width: 100%;
   font-size: 0.9rem;
 }
+.days-input{
+  border: none;
+}
+.name-input textarea{
+  padding: 20px 20px
+}
 .address{
   flex-wrap: wrap;
   gap: 10px;
 }
-
-
+.apply-btn{
+  width:50%;
+  min-width: 330px;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  background: #212121;
+  font-weight: bold;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.3s ease-in-out
+}
+.apply-btn:active{
+  transform: scale(0.9)
+}
+select option{
+  padding: 8px 14px;
+  font-size: 0.8rem;
+}
 
 
 
