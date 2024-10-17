@@ -1,5 +1,5 @@
 html{
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .form-container{
@@ -10,8 +10,8 @@ html{
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background: #e8e8e8;
-  font-family: "Roboto", sans-serif;
+  background: #2b3856;;
+  font-family: "Lato", sans-serif;
 }
 form{
   width: 60%;
@@ -22,9 +22,14 @@ form{
   gap: 30px;
   padding: 20px 10px 40px;
 }
+.logo-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo{
-  width:150px;
-  margin: 0 auto;
+  width:100px;
 }
 .title{
   width: 100%;
@@ -73,7 +78,7 @@ form{
   border: none;
   outline: none;
   color: #FFF;
-  background: #212121;
+  background: #2b3856;;
   font-weight: bold;
   margin: 0 auto;
   cursor: pointer;
@@ -86,6 +91,12 @@ select option{
   padding: 8px 14px;
   font-size: 0.8rem;
 }
-
+.result{
+  color: green;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 
